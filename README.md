@@ -1,25 +1,25 @@
 # linebot-llm
-
-.
+```
+. 
 ├── app.py
 ├── linebot.py
 ├── requirements.txt
-├── essay/
-│   ├── __init__.py
-│   └── llm.py
-├── restaurant/
-│   ├── __init__.py
-│   ├── data/
-│   │   ├── blog.md
-│   │   ├── google-map.json
-│   │   └── faq.qa
-│   ├── extractor.py
-│   └── llm.py
-├── youtube/
-│   ├── __init__.py
-│   └── llm.py
-└── readme.md
-
+├── essay/ 
+│     ├── __init__.py
+│     └── llm.py
+├── restaurant/ 
+│     ├── __init__.py
+│     ├── data/ 
+│     │     ├── blog.md
+│     │     ├── google-map.json
+│     │     └── faq.qa
+│     ├── extractor.py
+│     └── llm.py
+├── youtube/ 
+│     ├── __init__.py
+│     └── llm.py
+└── README.md
+```
 (English version is below)
 -------------------------------------------------
 
@@ -105,6 +105,9 @@ FAQ 資料存儲在 [`faq.qa`](./restaurant/data/faq.qa) 中，使用 [`extracto
 
 ### 部落格資料
 部落格資料存儲在 [`blog.md`](./restaurant/data/blog.md) 中，使用 [`extractor.py`](./restaurant/extractor.py) 中的 `BlogExtractor` 類別來處理。
+
+### Google Map 資料
+Google Map 資料存儲在 [`google-map.json`](./restaurant/data/google-map.json) 中，使用 [`extractor.py`](./restaurant/extractor.py) 中的 `GoogleMapExtractor` 類別來處理。
 
 ## 結論
 這個專案整合了多個 LLM 來處理不同主題的查詢，並通過 LINE Bot 與使用者互動。整個流程從接收訊息、選擇主題、處理查詢到回覆訊息，實現了一個完整的查詢處理系統。
@@ -193,6 +196,10 @@ FAQ data is stored in [`faq.qa`](./restaurant/data/faq.qa) and processed using t
 ### Blog Data
 
 Blog data is stored in [`blog.md`](./restaurant/data/blog.md) and processed using the `BlogExtractor` class in [`extractor.py`](./restaurant/extractor.py).
+
+### Google Map 資料
+
+Google Map data is stored in [`google-map.json`](./restaurant/data/google-map.json) and processed using the `GoogleMapExtractor` class in [`extractor.py`](./restaurant/extractor.py).
 
 ## Conclusion
 This project integrates multiple LLMs to handle queries on different topics and interacts with users through LINE Bot. The entire process, from receiving messages, selecting topics, processing queries to replying to messages, implements a complete query processing system. 
